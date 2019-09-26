@@ -33,8 +33,10 @@ public class Client {
 					public void run() {
 						DataOutputStream dos = null;
 						BufferedInputStream bis = null;
+						Socket socket = null;
 						try {
-							dos = new DataOutputStream(getSocket().getOutputStream());
+							socket = getSocket();
+							dos = new DataOutputStream(socket.getOutputStream());
 							dos.writeUTF(file.getName());
 							dos.flush();
 							bis = new BufferedInputStream(new FileInputStream(file));
@@ -52,9 +54,11 @@ public class Client {
 							e.printStackTrace();
 						}finally {
 							try {
+								
 								dos.flush();
 								dos.close();
 								bis.close();
+								socket.close();
 							} catch (IOException e) {
 								// TODO Auto-generated catch block
 								e.printStackTrace();
