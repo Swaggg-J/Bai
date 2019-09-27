@@ -1,4 +1,4 @@
-package com.lucky.lesson1;
+package com.lucky.thread.lesson1;
 
 /**
  * Thread类常用方法

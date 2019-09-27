@@ -1,4 +1,4 @@
-package com.lucky.lesson2;
+package com.lucky.thread.lesson2;
 /**
  * 创建线程方式二：实现Runnable接口
  * 1、创建一个实现Runnable接口的实现类

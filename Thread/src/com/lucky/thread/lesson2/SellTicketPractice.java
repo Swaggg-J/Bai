@@ -1,4 +1,4 @@
-package com.lucky.lesson2;
+package com.lucky.thread.lesson2;
 
 public class SellTicketPractice {
 	public static void main(String[] args) {

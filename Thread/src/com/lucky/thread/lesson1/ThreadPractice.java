@@ -1,4 +1,4 @@
-package com.lucky.lesson1;
+package com.lucky.thread.lesson1;
 
 /**
  * 创建两个线程，一个打印100以内奇数，一个打印100以内偶数

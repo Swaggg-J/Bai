@@ -1,4 +1,4 @@
-package com.lucky.lesson1;
+package com.lucky.thread.lesson1;
 
 public class HowToCreateThread {
 	public static void main(String[] args) {
